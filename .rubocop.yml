@@ -1,0 +1,14 @@
+inherit_gem:
+  armitage-rubocop:
+    - lib/rubocop.general.yml
+    - lib/rubocop.rspec.yml
+
+AllCops:
+  TargetRubyVersion: 2.5.3
+  Include:
+    - lib/**/*.rb
+    - spec/**/*.rb
+    - Gemfile
+    - Rakefile
+    - rabbit_matcher.gemspec
+    - bin/console

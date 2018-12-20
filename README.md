@@ -1,0 +1,1 @@
+# rabbit_matcher &middot; [![Build Status](https://travis-ci.org/0exp/rabbit_matcher.svg?branch=master)](https://travis-ci.org/0exp/rabbit_matcher)
