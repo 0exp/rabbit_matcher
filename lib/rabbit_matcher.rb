@@ -78,14 +78,14 @@ class RabbitMatcher
   # @since 0.1.0
   attr_reader :scope_pattern
 
-  # @return [Integer,Float::INFINITY]
+  # @return [Integer, Float::INFINITY]
   #
   # @api private
   # @since 0.1.0
   attr_reader :scope_pattern_size
 
   # @param scope_pattern [String]
-  # @return [Integer,Float::INFINITY]
+  # @return [Integer, Float::INFINITY]
   #
   # @api private
   # @since 0.1.0
@@ -119,7 +119,7 @@ class RabbitMatcher
     scope_pattern_size == count_event_type_size(event_type)
   end
 
-  # @param pattern [String,NilClass]
+  # @param pattern [String, NilClass]
   # @return [Boolean]
   #
   # @api private
