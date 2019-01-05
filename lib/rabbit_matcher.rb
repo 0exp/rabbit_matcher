@@ -94,7 +94,7 @@ class RabbitMatcher
     return Float::INFINITY if scope_pattern.include?('.#')
     return Float::INFINITY if scope_pattern.include?('#.')
     return Float::INFINITY if scope_pattern.include?('.#.')
- 
+
     scope_pattern.split(SCOPE_SPLITTER).size
   end
 
@@ -150,7 +150,6 @@ class RabbitMatcher
   #
   # @api private
   # @since 0.1.0
-  # rubocop:disable Metrics/AbcSize
   def build_pattern_matcher(scope_pattern)
     routing_parts = scope_pattern.split(SCOPE_SPLITTER)
 
@@ -173,5 +172,4 @@ class RabbitMatcher
 
     Regexp.new('\A' + regexp_string + '\z')
   end
-  # rubocop:enable Metrics/AbcSize
 end
