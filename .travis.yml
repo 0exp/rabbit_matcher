@@ -1,17 +1,19 @@
+cache: bundler
+before_install: gem install bundler
+script: bundle exec rspec
+os: linux
+dist: xenial
 language: ruby
-matrix:
+jobs:
   fast_finish: true
   include:
   - rvm: 2.3.8
-  - rvm: 2.4.6
-  - rvm: 2.5.5
-  - rvm: 2.6.3
+  - rvm: 2.4.10
+  - rvm: 2.5.8
+  - rvm: 2.6.6
+  - rvm: 2.7.1
   - rvm: ruby-head
   - rvm: jruby-head
   allow_failures:
   - rvm: ruby-head
   - rvm: jruby-head
-sudo: false
-cache: bundler
-before_install: gem install bundler
-script: bundle exec rspec
